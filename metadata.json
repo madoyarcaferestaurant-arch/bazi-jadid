@@ -1,0 +1,6 @@
+{
+  "name": "Madoyar App",
+  "description": "Madoyar App featuring interactive line-art chubby boy character, Two Sparks reflex game, Hokm card game, About Us, and comprehensive theme/audio settings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Generator for metainfo & .desktop files:
+    https://www.freedesktop.org/software/appstream/metainfocreator/#/
+-->
+<component type="desktop-application">
+    <id>com.adilhanney.ricochlime</id>
+
+    <name>Ricochlime</name>
+    <summary>Satisfying monster shooter</summary>
+    <url type="homepage">https://github.com/adil192/ricochlime</url>
+    <url type="bugtracker">https://github.com/adil192/ricochlime/issues</url>
+    <url type="donation">https://github.com/sponsors/adil192</url>
+    <url type="vcs-browser">https://github.com/adil192/ricochlime</url>
+
+    <developer id="com.adilhanney">
+        <name>Adil Hanney</name>
+    </developer>
+
+    <metadata_license>MIT</metadata_license>
+    <project_license>AGPL-3.0-only</project_license>
+
+    <recommends>
+        <control>pointing</control>
+        <control>touch</control>
+        <control>tablet</control>
+    </recommends>
+    <requires>
+        <display_length compare="ge">360</display_length>
+    </requires>
+
+    <description>
+        <p>
+            Ricochlime is a game where you attack the advancing
+            monsters with your ricocheting projectiles. The game is
+            made with the Flame game engine and Flutter.
+        </p>
+    </description>
+
+    <launchable type="desktop-id">com.adilhanney.ricochlime.desktop</launchable>
+
+    <content_rating type="oars-1.1" />
+
+    <categories>
+        <category>Game</category>
+        <category>LogicGame</category>
+    </categories>
+
+    <keywords>
+        <keyword>flutter</keyword>
+        <keyword>flame-engine</keyword>
+        <keyword>monster</keyword>
+        <keyword>shooter</keyword>
+        <keyword>game</keyword>
+        <keyword>open-source</keyword>
+        <keyword>cross-platform</keyword>
+        <keyword>cute</keyword>
+        <keyword>pixel-art</keyword>
+        <keyword>16-bit</keyword>
+    </keywords>
+
+    <screenshots>
+        <screenshot type="default">
+            <image>
+                https://raw.githubusercontent.com/adil192/ricochlime/main/metadata/en-US/images/flathubScreenshots/1_home.png</image>
+            <caption>Main menu with quick volume controls and navigation to play, shop, tutorial,
+                and settings.</caption>
+        </screenshot>
+        <screenshot type="default">
+            <image>
+                https://raw.githubusercontent.com/adil192/ricochlime/main/metadata/en-US/images/flathubScreenshots/2_play.png</image>
+            <caption>Gameplay screenshot showcasing the player aiming between monsters to ricochet
+                their shots.</caption>
+        </screenshot>
+        <screenshot type="default">
+            <image>
+                https://raw.githubusercontent.com/adil192/ricochlime/main/metadata/en-US/images/flathubScreenshots/4_shop.png</image>
+            <caption>Shop with unlockable cosmetic bullet shapes and colors.</caption>
+        </screenshot>
+        <screenshot type="default">
+            <image>
+                https://raw.githubusercontent.com/adil192/ricochlime/main/metadata/en-US/images/flathubScreenshots/5_tutorial.png</image>
+            <caption>Tutorial explaining the game mechanics and controls.</caption>
+        </screenshot>
+        <screenshot type="default">
+            <image>
+                https://raw.githubusercontent.com/adil192/ricochlime/main/metadata/en-US/images/flathubScreenshots/6_settings.png</image>
+            <caption>Settings for gameplay, accessibility, audio, performance, and app information.</caption>
+        </screenshot>
+    </screenshots>
+
+    <branding>
+        <color type="primary" scheme_preference="light">#3abe41</color>
+        <color type="primary" scheme_preference="dark">#28822d</color>
+    </branding>
+
+    <releases>
+        <release version="1.14.0" date="2026-08-04">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.14.0</url>
+            <description>
+                <ul>
+                    <li>Minor maintenance updates, no functional changes</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.13.1" date="2026-04-14">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.13.1</url>
+            <description>
+                <ul>
+                    <li>Removed some unneeded audio libraries</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.13.0" date="2026-04-14">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.13.0</url>
+            <description>
+                <ul>
+                    <li>To benefit accessibility, the black bullet color is now free.</li>
+                    <li>Minor maintenance updates.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.12.4" date="2026-01-14">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.12.4</url>
+            <description>
+                <ul>
+                    <li>Game music is paused when the game is backgrounded.</li>
+                    <li>Improved Flathub listing with more URLs and screenshot captions.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.12.3" date="2026-01-13">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.12.3</url>
+            <description>
+                <ul>
+                    <li>Reduced app size by removing unused icons</li>
+                    <li>Fixed arm64 Linux builds</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.12.2" date="2026-01-12">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.12.2</url>
+            <description>
+                <ul>
+                    <li>Reduced app size by optimizing audio files.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.12.1" date="2026-01-12">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.12.1</url>
+            <description>
+                <ul>
+                    <li>Reduced app size by removing web-specific code</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.12.0" date="2026-01-10">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.15</url>
+            <description>
+                <ul>
+                    <li>Added a sound effect for when a monster gets hit.</li>
+                    <li>A loading bar will be briefly shown when you open the app.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.14" date="2025-12-28">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.14</url>
+            <description>
+                <ul>
+                    <li>Migrated AppImage builds to the `linuxdeploy` tool instead of the
+                        unmaintained `appimage-builder`.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.13" date="2025-12-12">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.13</url>
+            <description>
+                <ul>
+                    <li>Fixed alignment of the coin count text</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.11" date="2025-11-04">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.11</url>
+            <description>
+                <ul>
+                    <li>Minor upstream improvements</li>
+                    <li>Reduced the titlebar size by always using server-side decorations</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.10" date="2025-08-28">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.10</url>
+            <description>
+                <ul>
+                    <li>Tweaked some variations of the app icon</li>
+                    <li>Refactored and updated technical parts of the app</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.9" date="2025-05-21">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.9</url>
+            <description>
+                <ul>
+                    <li>Misc technical improvements</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.8" date="2025-04-20">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.8</url>
+            <description>
+                <ul>
+                    <li>Fixed low performance on some devices</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.7" date="2025-04-13">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.7</url>
+            <description>
+                <ul>
+                    <li>Dependency updates</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.6" date="2025-01-12">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.6</url>
+            <description>
+                <ul>
+                    <li>Removed ads for mobile users</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.5" date="2024-12-28">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.5</url>
+            <description>
+                <ul>
+                    <li>Small fixes for the fps counter</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.4" date="2024-12-21">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.4</url>
+            <description>
+                <ul>
+                    <li>Coin counts are no longer rounded (e.g. 3.4K → 3398)</li>
+                    <li>General performance improvements</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.3" date="2024-09-17">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.3</url>
+            <description>
+                <ul>
+                    <li>Stabilized frame rates when capped in settings</li>
+                    <li>Added a frame rate (FPS) counter that can be enabled in settings</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.2" date="2024-09-07">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.2</url>
+            <description>
+                <ul>
+                    <li>Removed ads that showed up between turns, so now fullscreen ads are only
+                        shown after a game over.</li>
+                    <li>Fixed there being no page transitions when stylized page transitions were
+                        turned off.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.1" date="2024-08-07">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.1</url>
+            <description>
+                <ul>
+                    <li>Page transitions are faster by default and the old "faster page transitions"
+                        setting has been removed</li>
+                    <li>Disable the new "stylized page transitions" setting to use the system
+                        default</li>
+                    <li>Improved handling of the aim guide so the number of dots changes less often</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.11.0" date="2024-08-02">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.11.0</url>
+            <description>
+                <ul>
+                    <li>Added a setting to hide the reflection hint in the aim guide</li>
+                    <li>New Russian translation, thanks to @yurtpage on GitHub</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.10.1" date="2024-07-16">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.10.1</url>
+            <description>
+                <ul>
+                    <li>The aim guide now shows where the bullets will bounce off the wall.</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.10.0" date="2024-06-28">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.10.0</url>
+            <description>
+                <ul>
+                    <li>Restricted aim angles to not be completely horizontal</li>
+                    <li>Updated the tutorial page</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.9.0" date="2024-06-15">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.9.0</url>
+            <description>
+                <ul>
+                    <li>Fixed a bug where you could use unpurchased items from the shop</li>
+                    <li>Added 2 more bullet shapes</li>
+                    <li>Added a shiny new game-over animation</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.8.2" date="2024-06-09">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.8.2</url>
+            <description>
+                <ul>
+                    <li>Fixed the FPS limit not working when tapping to speed up</li>
+                    <li>Fixed some users encountering a blank screen</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.8.1" date="2024-06-08">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.8.1</url>
+            <description>
+                <ul>
+                    <li>Added an accessibility option to display bigger bullets</li>
+                    <li>Reorganised the settings page</li>
+                    <li>Fixed a graphical issue with one of the new bullet shapes</li>
+                    <li>When buying an item, it will now be automatically selected</li>
+                </ul>
+            </description>
+        </release>
+        <release version="1.8.0" date="2024-06-06">
+            <url type="details">https://github.com/adil192/ricochlime/releases/tag/v1.8.0</url>
+            <description>
+                <ul>
+                    <li>Added a shop where you can unlock new bullet colors and shapes!</li>
+                    <li>Aiming bug fixes for desktop users</li>
+                </ul>
+            </description>
+        </release>
+    </releases>
+</component>

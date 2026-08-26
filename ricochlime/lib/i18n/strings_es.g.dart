@@ -1,0 +1,162 @@
+///
+/// Generated file. Do not edit.
+///
+// coverage:ignore-file
+// ignore_for_file: type=lint, unused_import
+// dart format off
+
+import 'package:flutter/widgets.dart';
+import 'package:intl/intl.dart';
+import 'package:slang/generated.dart';
+import 'strings.g.dart';
+
+// Path: <root>
+class TranslationsEs extends Translations with BaseTranslations<AppLocale, Translations> {
+	/// You can call this constructor and build your own translation instance of this locale.
+	/// Constructing via the enum [AppLocale.build] is preferred.
+	TranslationsEs({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver, TranslationMetadata<AppLocale, Translations>? meta})
+		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
+		  $meta = meta ?? TranslationMetadata(
+		    locale: AppLocale.es,
+		    overrides: overrides ?? {},
+		    cardinalResolver: cardinalResolver,
+		    ordinalResolver: ordinalResolver,
+		  ),
+		  super(cardinalResolver: cardinalResolver, ordinalResolver: ordinalResolver);
+
+	/// Metadata for the translations of <es>.
+	@override final TranslationMetadata<AppLocale, Translations> $meta;
+
+	late final TranslationsEs _root = this; // ignore: unused_field
+
+	@override 
+	TranslationsEs $copyWith({TranslationMetadata<AppLocale, Translations>? meta}) => TranslationsEs(meta: meta ?? this.$meta);
+
+	// Translations
+	@override String get appName => 'Ricochlime';
+	@override late final _Translations$homePage$es homePage = _Translations$homePage$es._(_root);
+	@override late final _Translations$playPage$es playPage = _Translations$playPage$es._(_root);
+	@override late final _Translations$settingsPage$es settingsPage = _Translations$settingsPage$es._(_root);
+	@override late final _Translations$gameOverPage$es gameOverPage = _Translations$gameOverPage$es._(_root);
+	@override late final _Translations$restartGameDialog$es restartGameDialog = _Translations$restartGameDialog$es._(_root);
+	@override late final _Translations$tutorialPage$es tutorialPage = _Translations$tutorialPage$es._(_root);
+	@override late final _Translations$shopPage$es shopPage = _Translations$shopPage$es._(_root);
+}
+
+// Path: homePage
+class _Translations$homePage$es extends Translations$homePage$en {
+	_Translations$homePage$es._(TranslationsEs root) : this._root = root, super.internal(root);
+
+	final TranslationsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get shopButton => 'Comercio';
+	@override String get tutorialButton => 'tutorial';
+	@override String get playButton => 'Jugar';
+	@override String get settingsButton => 'Ajustes';
+}
+
+// Path: playPage
+class _Translations$playPage$es extends Translations$playPage$en {
+	_Translations$playPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
+
+	final TranslationsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get coins => 'monedas';
+	@override String get undo => 'Deshacer movimiento';
+	@override String highScore({required Object p}) => 'Mejor: ${p}';
+}
+
+// Path: settingsPage
+class _Translations$settingsPage$es extends Translations$settingsPage$en {
+	_Translations$settingsPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
+
+	final TranslationsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get bgmVolume => 'Volumen de música';
+	@override String get sfxVolume => 'Volumen de efectos de sonido';
+	@override String get showFpsCounter => 'Mostrar contador de FPS';
+	@override String get stylizedPageTransitions => 'Transiciones de página estilizadas';
+	@override String get showReflectionInAimGuide => 'Mostrar reflejo en la guía de objetivos.';
+	@override String get hyperlegibleFont => 'Fuente fácil de leer';
+	@override String get biggerBullets => 'balas mas grandes';
+	@override String get gameplay => 'Como se Juega';
+	@override String get accessibility => 'Accesibilidad';
+	@override String get maxFps => 'FPS máx.';
+	@override String get showUndoButton => 'Permitir deshacer movimientos';
+	@override String get title => 'Ajustes';
+	@override String get appInfo => 'Informacion de la applicacion';
+	@override String licenseNotice({required Object buildYear}) => 'Ricochlime  Copyright (C) 2023-${buildYear}  Adil Hanney\nEste programa no tiene ninguna garantía. Este es un software gratuito y puede redistribuirlo bajo ciertas condiciones.\n';
+}
+
+// Path: gameOverPage
+class _Translations$gameOverPage$es extends Translations$gameOverPage$en {
+	_Translations$gameOverPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
+
+	final TranslationsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get continueWithCoins => '100 para continuar';
+	@override String get title => '¡Juego terminado!';
+	@override String highScoreNotBeaten({required Object p}) => '¡Obtuviste ${p} puntos!';
+	@override TextSpan highScoreBeaten({required InlineSpan pOld, required InlineSpan pNew}) => TextSpan(children: [
+		const TextSpan(text: '¡Tu puntuación más alta ahora es '),
+		pOld,
+		const TextSpan(text: ' antiguos '),
+		pNew,
+		const TextSpan(text: '!'),
+	]);
+	@override String get restartGameButton => 'Reinicia el juego';
+	@override String get homeButton => 'Hogar';
+}
+
+// Path: restartGameDialog
+class _Translations$restartGameDialog$es extends Translations$restartGameDialog$en {
+	_Translations$restartGameDialog$es._(TranslationsEs root) : this._root = root, super.internal(root);
+
+	final TranslationsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => '¿Reinicia el juego?';
+	@override String get areYouSure => '¿Estás seguro de que quieres reiniciar? No puedes deshacer esto';
+	@override String get waitCancel => '¡Espera, cancela!';
+	@override String get yesImSure => '¡Sí estoy seguro!';
+}
+
+// Path: tutorialPage
+class _Translations$tutorialPage$es extends Translations$tutorialPage$en {
+	_Translations$tutorialPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
+
+	final TranslationsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get dragAndRelease => 'Derrota a los monstruos arrastrándolos para apuntar y soltándolos para disparar.';
+	@override String get pointAndClick => 'Derrota a los monstruos moviendo el mouse para apuntar y haciendo clic para disparar.';
+	@override String get goldMonsters => 'Después de derrotar a un monstruo dorado, obtendrás una moneda.';
+	@override String get greenMonsters => 'Después de derrotar a un monstruo verde, recibirás una bala extra.';
+	@override String get skullLine => 'Un monstruo que llega a la línea del cráneo significa que el juego se acaba si no lo derrotas en el siguiente turno.';
+	@override String get useCoinsInShop => 'Ahorra monedas para desbloquear nuevos artículos en la tienda...';
+	@override String get orUseCoinsToContinue => '...o úsalos para continuar después de que termine el juego.';
+	@override String get tutorial => 'tutorial';
+	@override String get bounceOffWalls => 'Rebota tus tiros en las paredes para golpear a la mayor cantidad de monstruos.';
+	@override String get tapSpeedUp => 'Toca la pantalla para acelerar tus disparos.';
+	@override String get moreMonsters => 'Aparecerán más filas de monstruos en cada turno a medida que avances, por lo que la zona de peligro también se hará más grande.';
+}
+
+// Path: shopPage
+class _Translations$shopPage$es extends Translations$shopPage$en {
+	_Translations$shopPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
+
+	final TranslationsEs _root; // ignore: unused_field
+
+	// Translations
+	@override String get buy1000Coins => 'Comprar 1000 monedas';
+	@override String get buy5000Coins => 'Comprar 5000 monedas';
+	@override String get restorePurchases => 'Restaurar las compras';
+	@override String get premium => 'De primera calidad';
+	@override String get bulletShapes => 'Formas de bala';
+	@override String get bulletColors => 'Colores de bala';
+	@override String get title => 'Comercio';
+}

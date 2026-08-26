@@ -1,0 +1,59 @@
+appName: مادویار
+homePage:
+  playButton: بازی
+  shopButton: فروشگاه
+  settingsButton: تنظیمات
+  tutorialButton: آموزش
+playPage:
+  highScore: "بهترین: $p"
+  undo: لغو حرکت
+  coins: سکه
+settingsPage:
+  title: تنظیمات
+  gameplay: گیم‌پلی
+  accessibility: دسترس‌پذیری
+  hyperlegibleFont: فونت خوانا
+  stylizedPageTransitions: انتقال‌های نمایشی صفحه
+  bgmVolume: صدای موسیقی
+  sfxVolume: صدای جلوه‌ها
+  showUndoButton: امکان لغو حرکت
+  showReflectionInAimGuide: نمایش بازتاب در راهنما
+  biggerBullets: گلوله‌های بزرگ‌تر
+  maxFps: حداکثر فریم‌برثانیه
+  showFpsCounter: نمایش شمارنده فریم
+  appInfo: اطلاعات برنامه
+  licenseNotice: |-
+    مادویار  Copyright (C) 2023-$buildYear  Adil Hanney
+    این برنامه بدون هیچ‌گونه ضمانتی ارائه می‌شود. این نرم‌افزار آزاد است و می‌توانید آن را تحت شرایطی بازتوزیع کنید.
+gameOverPage:
+  title: بازی تمام شد!
+  highScoreNotBeaten: امتیاز شما $p شد!
+  highScoreBeaten(rich): رکورد شما اکنون $pOld $pNew امتیاز است!
+  continueWithCoins: ۱۰۰ سکه برای ادامه
+  restartGameButton: شروع دوباره
+  homeButton: خانه
+restartGameDialog:
+  title: بازی از نو شروع شود؟
+  areYouSure: از شروع دوباره مطمئن هستید؟ امکان لغو آن وجود ندارد
+  waitCancel: صبر کنید، لغو کن!
+  yesImSure: بله، مطمئنم!
+tutorialPage:
+  tutorial: آموزش
+  dragAndRelease: برای شکست هیولاها بکشید، هدف بگیرید و برای شلیک رها کنید.
+  pointAndClick: برای هدف‌گیری ماوس را حرکت دهید و برای شلیک کلیک کنید.
+  goldMonsters: پس از شکست هیولای طلایی، یک سکه می‌گیرید.
+  greenMonsters: پس از شکست هیولای سبز، یک گلوله اضافه می‌گیرید.
+  bounceOffWalls: گلوله‌ها را به دیوارها بزنید تا هیولاهای بیشتری را هدف بگیرند.
+  tapSpeedUp: برای سریع‌تر شدن گلوله‌ها روی صفحه بزنید.
+  skullLine: رسیدن هیولا به خط جمجمه، در صورت شکست نخوردن در حرکت بعدی، پایان بازی است.
+  moreMonsters: با پیشرفت شما هر دور ردیف‌های بیشتری از هیولاها ظاهر می‌شود.
+  useCoinsInShop: سکه جمع کنید تا آیتم‌های جدید فروشگاه را باز کنید...
+  orUseCoinsToContinue: "...یا برای ادامه پس از پایان بازی از آن‌ها استفاده کنید."
+shopPage:
+  title: فروشگاه
+  bulletColors: رنگ گلوله‌ها
+  bulletShapes: شکل گلوله‌ها
+  premium: ویژه
+  restorePurchases: بازیابی خریدها
+  buy1000Coins: خرید ۱۰۰۰ سکه
+  buy5000Coins: خرید ۵۰۰۰ سکه

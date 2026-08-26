@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta name="color-scheme" content="light dark">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Satisfying monster shooter">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Ricochlime">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="icons/Icon-192.png"/>
+
+  <title>Ricochlime</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    html {
+      color-scheme: light dark;
+      image-rendering: pixelated;
+    }
+    html, #loading {
+      background: #f7fbf1;
+      color: #1d1b20;
+    }
+    @media (prefers-color-scheme: dark) {
+      html, #loading {
+        background: #10140f;
+        color: #e6e0e9;
+      }
+    }
+    #loading {
+      height: 100vh;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      position: relative;
+      z-index: 1000;
+    }
+    #loading::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 192px;
+      height: 192px;
+      background: url('icons/Icon-192.png') no-repeat center / contain;
+      opacity: 0;
+      animation: pulse 1.5s infinite;
+    }
+    #loading.loaded {
+      opacity: 0;
+      pointer-events: none;
+    }
+    #loading.loaded::before {
+      animation-iteration-count: 1;
+    }
+    @keyframes pulse {
+      0% { opacity: 0; }
+      33% { opacity: 1; }
+      66% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div id="loading"></div>
+
+  <script src="flutter_bootstrap.js" async></script>
+  <script src="assets/packages/flutter_soloud/web/libflutter_soloud_plugin.js" defer></script>
+  <script src="assets/packages/flutter_soloud/web/init_module.dart.js" defer></script>
+</body>
+</html>
