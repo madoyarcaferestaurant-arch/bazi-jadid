@@ -237,18 +237,18 @@ packages:
     dependency: "direct main"
     description:
       name: flame_audio
-      sha256: f88692222444231cdb380af8ca087b521da26773c1bb4d1da33a24c953d3b3ea
+      sha256: "16303eef8e21281432d91f88526f91ef949d13a6f706a7d9252bfc027ceea39d"
       url: "https://pub.dev"
     source: hosted
-    version: "2.12.2"
+    version: "2.12.1"
   flame_forge2d:
     dependency: transitive
     description:
       name: flame_forge2d
-      sha256: "289b1d5450d7455b837e0ddb271017ecb191bd824940d1f800f12e9592c37746"
+      sha256: "9c3fed8ae1bd7ad3014e541f1c2abbc8c6297ddc1c67616394bb7447453a4552"
       url: "https://pub.dev"
     source: hosted
-    version: "0.19.3+7"
+    version: "0.19.2+6"
   flame_tiled:
     dependency: "direct main"
     description:
