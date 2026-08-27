@@ -8,6 +8,10 @@ import 'two_sparks_game_screen.dart';
 import 'hokm_game_screen.dart';
 import 'gems_game_screen.dart';
 import 'neon_asteroids_game_screen.dart';
+import 'ricochlime_game_screen.dart';
+import 'maplestory_game_screen.dart';
+import 'beehoney_game_screen.dart';
+import 'treasure_hunt_game_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final AppSettings settings;
@@ -342,7 +346,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                 showDivider: true,
                                 onTap: () {
                                   widget.settings.playUiFeedback(isHeavy: true);
-                                  Navigator.of(context).pushNamed('/ricochlime');
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) => RicochlimeGameScreen(
+                                        settings: widget.settings,
+                                      ),
+                                    ),
+                                  );
                                 },
                               ),
 
@@ -359,7 +369,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                 showDivider: true,
                                 onTap: () {
                                   widget.settings.playUiFeedback(isHeavy: true);
-                                  Navigator.of(context).pushNamed('/maplestory');
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) => MapleStoryGameScreen(
+                                        settings: widget.settings,
+                                      ),
+                                    ),
+                                  );
                                 },
                               ),
 
@@ -376,7 +392,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                 showDivider: true,
                                 onTap: () {
                                   widget.settings.playUiFeedback();
-                                  Navigator.of(context).pushNamed('/beehoney');
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) => BeeHoneyGameScreen(
+                                        settings: widget.settings,
+                                      ),
+                                    ),
+                                  );
                                 },
                               ),
 
@@ -394,7 +416,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                 showDivider: true,
                                 onTap: () {
                                   widget.settings.playUiFeedback(isHeavy: true);
-                                  Navigator.of(context).pushNamed('/treasure_hunt');
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) => TreasureHuntGameScreen(
+                                        settings: widget.settings,
+                                      ),
+                                    ),
+                                  );
                                 },
                               ),
 
