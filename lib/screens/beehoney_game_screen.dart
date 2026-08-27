@@ -55,8 +55,8 @@ class _BeeHoneyGameScreenState extends State<BeeHoneyGameScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GameWidget(
-        game: BeeHoney(onFlowerCollected: _playCollectEffect),
+      body: GameWidget.controlled(
+        gameFactory: () => BeeHoney(onFlowerCollected: _playCollectEffect),
         overlayBuilderMap: const {'GameOver': gameOverWidget},
         errorBuilder: (context, error) => _GameUnavailable(error: error),
       ),

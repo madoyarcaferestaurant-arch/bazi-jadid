@@ -8,12 +8,9 @@ class AudioSettingsNotifier extends riverpod.Notifier<AudioSettings> {
   @override
   AudioSettings build() => AudioSettings();
 
-  void initializeMusic(String musicFile) async {
+  Future<void> initializeMusic(String musicFile) async {
     // TODO (Trey) - Create toggle for playing music
-    // if (!_isMusicInitialized) {
-    //   FlameAudio.bgm.play(musicFile);
-    //   _isMusicInitialized = true;
-    // }
+    await FlameAudio.bgm.play(musicFile);
 
     await FlameAudio.bgm.audioPlayer.setVolume(
       state.isMusicMuted ? 0.0 : state.musicVolume,

@@ -28,6 +28,7 @@ class _TreasureHuntGameScreenState extends State<TreasureHuntGameScreen> {
   Future<void> _initialize() async {
     try {
       FlameAudio.audioCache = AudioCache(prefix: 'assets/treasure_hunt/audio/');
+      await FlameAudio.audioCache.loadAll(treasure_main.audios);
       treasure_main.packageInfo = await PackageInfo.fromPlatform();
       treasure_main.logger = Logger();
     } catch (error, stackTrace) {

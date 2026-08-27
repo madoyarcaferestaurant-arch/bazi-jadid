@@ -41,8 +41,8 @@ class _MapleStoryGameScreenState extends State<MapleStoryGameScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GameWidget(
-        game: MapleStory(),
+      body: GameWidget.controlled(
+        gameFactory: MapleStory.new,
         errorBuilder: (context, error) => _GameUnavailable(error: error),
       ),
     );
