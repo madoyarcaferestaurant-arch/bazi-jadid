@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:madoyar_app/embedded/treasure_hunt/domain/core/providers.dart';
 import 'package:madoyar_app/embedded/treasure_hunt/main.dart';
 import 'package:madoyar_app/embedded/treasure_hunt/presentation/components/volume_slider.dart';
@@ -51,7 +50,7 @@ class AudioSettingsOverlay extends ConsumerWidget {
             Spacer(),
             ListTile(
               leading: Icon(
-                Platform.isMacOS ? MdiIcons.apple : MdiIcons.android,
+                Platform.isMacOS ? Icons.phone_iphone : Icons.android,
                 size: 25,
                 color: Colors.white,
               ),
