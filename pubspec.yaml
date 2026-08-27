@@ -44,6 +44,59 @@ flutter:
   uses-material-design: true
   assets:
     - assets/audio/
-    - assets/maplestory/
-    - assets/beehoney/
-    - assets/treasure_hunt/
+    - assets/audio/bgm/
+    - assets/audio/sfx/
+    - assets/images/
+    - assets/google_fonts/Atkinson_Hyperlegible/
+    - assets/google_fonts/Silkscreen/
+    - assets/icon/
+    - assets/icon/resized/
+    - assets/maplestory/audio/
+    - assets/maplestory/images/
+    - assets/maplestory/images/HUD/
+    - assets/maplestory/images/maps/
+    - assets/maplestory/images/maps/backgrounds/
+    - assets/maplestory/images/monsters/Blue Snail/
+    - assets/maplestory/images/monsters/Orange Mushroom/
+    - assets/maplestory/images/players/boy/
+    - assets/maplestory/images/players/girl/
+    - assets/maplestory/tiles/
+    - assets/beehoney/audio/
+    - assets/beehoney/images/
+    - assets/treasure_hunt/audio/
+    - assets/treasure_hunt/fonts/
+    - assets/treasure_hunt/images/
+    - assets/treasure_hunt/images/alchemist/
+    - assets/treasure_hunt/images/background/
+    - assets/treasure_hunt/images/blacksmith/
+    - assets/treasure_hunt/images/bonfire/
+    - assets/treasure_hunt/images/chest/
+    - assets/treasure_hunt/images/coin/
+    - assets/treasure_hunt/images/dwarf_warrior/attack/
+    - assets/treasure_hunt/images/dwarf_warrior/death/
+    - assets/treasure_hunt/images/dwarf_warrior/hurt/
+    - assets/treasure_hunt/images/dwarf_warrior/idle/
+    - assets/treasure_hunt/images/dwarf_warrior/walk/
+    - assets/treasure_hunt/images/gem/
+    - assets/treasure_hunt/images/headless_horseman/attack/
+    - assets/treasure_hunt/images/headless_horseman/death/
+    - assets/treasure_hunt/images/headless_horseman/hurt/
+    - assets/treasure_hunt/images/headless_horseman/idle/
+    - assets/treasure_hunt/images/headless_horseman/run/
+    - assets/treasure_hunt/images/input/
+    - assets/treasure_hunt/images/item/
+    - assets/treasure_hunt/images/lizardman/attack/
+    - assets/treasure_hunt/images/lizardman/death/
+    - assets/treasure_hunt/images/lizardman/hurt/
+    - assets/treasure_hunt/images/lizardman/idle/
+    - assets/treasure_hunt/images/lizardman/walk/
+    - assets/treasure_hunt/images/minotaur/attack_one/
+    - assets/treasure_hunt/images/minotaur/attack_two/
+    - assets/treasure_hunt/images/minotaur/death/
+    - assets/treasure_hunt/images/minotaur/hurt/
+    - assets/treasure_hunt/images/minotaur/idle/
+    - assets/treasure_hunt/images/minotaur/walk/
+    - assets/treasure_hunt/images/plant/
+    - assets/treasure_hunt/images/potion/
+    - assets/treasure_hunt/images/world_object/
+    - assets/treasure_hunt/lotties/
