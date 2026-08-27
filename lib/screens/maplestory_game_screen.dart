@@ -23,9 +23,13 @@ class _MapleStoryGameScreenState extends State<MapleStoryGameScreen> {
   }
 
   Future<void> _startMusic() async {
-    await _music.setReleaseMode(ReleaseMode.loop);
-    await _music.setVolume(0.18);
-    await _music.play(AssetSource('maplestory/audio/theme.wav'));
+    try {
+      await _music.setReleaseMode(ReleaseMode.loop);
+      await _music.setVolume(0.18);
+      await _music.play(AssetSource('maplestory/audio/theme.wav'));
+    } catch (error, stackTrace) {
+      debugPrint('MapleStory audio initialization failed: $error\n$stackTrace');
+    }
   }
 
   @override
@@ -36,6 +40,22 @@ class _MapleStoryGameScreenState extends State<MapleStoryGameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: GameWidget(game: MapleStory()));
+    return Scaffold(
+      body: GameWidget(
+        game: MapleStory(),
+        errorBuilder: (context, error) => _GameUnavailable(error: error),
+      ),
+    );
+  }
+}
+
+class _GameUnavailable extends StatelessWidget {
+  final Object error;
+
+  const _GameUnavailable({required this.error});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('خطا در بارگذاری بازی: $error'));
   }
 }

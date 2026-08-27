@@ -216,7 +216,12 @@ class _PlayPageState extends State<PlayPage> with WidgetsBindingObserver {
                         child: SizedBox(
                           width: RicochlimeGame.expectedWidth,
                           height: RicochlimeGame.expectedHeight,
-                          child: GameWidget(game: RicochlimeGame.instance),
+                          child: GameWidget(
+                            game: RicochlimeGame.instance,
+                            errorBuilder: (context, error) => Center(
+                              child: Text('خطا در بارگذاری بازی: $error'),
+                            ),
+                          ),
                         ),
                       ),
                     ),

@@ -29,9 +29,13 @@ class _BeeHoneyGameScreenState extends State<BeeHoneyGameScreen> {
   }
 
   Future<void> _startMusic() async {
-    await _music.setReleaseMode(ReleaseMode.loop);
-    await _music.setVolume(0.18);
-    await _music.play(AssetSource('beehoney/audio/theme.wav'));
+    try {
+      await _music.setReleaseMode(ReleaseMode.loop);
+      await _music.setVolume(0.18);
+      await _music.play(AssetSource('beehoney/audio/theme.wav'));
+    } catch (error, stackTrace) {
+      debugPrint('Beehoney audio initialization failed: $error\n$stackTrace');
+    }
   }
 
   Future<void> _playCollectEffect() async {
@@ -54,7 +58,19 @@ class _BeeHoneyGameScreenState extends State<BeeHoneyGameScreen> {
       body: GameWidget(
         game: BeeHoney(onFlowerCollected: _playCollectEffect),
         overlayBuilderMap: const {'GameOver': gameOverWidget},
+        errorBuilder: (context, error) => _GameUnavailable(error: error),
       ),
     );
+  }
+}
+
+class _GameUnavailable extends StatelessWidget {
+  final Object error;
+
+  const _GameUnavailable({required this.error});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('خطا در بارگذاری بازی: $error'));
   }
 }

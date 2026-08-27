@@ -26,9 +26,14 @@ class _TreasureHuntGameScreenState extends State<TreasureHuntGameScreen> {
   }
 
   Future<void> _initialize() async {
-    FlameAudio.audioCache = AudioCache(prefix: 'assets/treasure_hunt/audio/');
-    treasure_main.packageInfo = await PackageInfo.fromPlatform();
-    treasure_main.logger = Logger();
+    try {
+      FlameAudio.audioCache = AudioCache(prefix: 'assets/treasure_hunt/audio/');
+      treasure_main.packageInfo = await PackageInfo.fromPlatform();
+      treasure_main.logger = Logger();
+    } catch (error, stackTrace) {
+      debugPrint('Treasure Hunt initialization failed: $error\n$stackTrace');
+      rethrow;
+    }
   }
 
   @override
@@ -38,18 +43,29 @@ class _TreasureHuntGameScreenState extends State<TreasureHuntGameScreen> {
         future: _initialization,
         builder: (context, snapshot) {
           if (snapshot.hasError) {
-            return Center(
-              child: Text('خطا در بارگذاری بازی: ${snapshot.error}'),
-            );
+            return _GameUnavailable(error: snapshot.error!);
           }
           if (snapshot.connectionState != ConnectionState.done) {
             return const Center(child: CircularProgressIndicator());
           }
           return ProviderScope(
-            child: Consumer(builder: (context, ref, child) => MyCoolGame(ref)),
+            child: Consumer(
+              builder: (context, ref, child) => MyCoolGame(ref),
+            ),
           );
         },
       ),
     );
+  }
+}
+
+class _GameUnavailable extends StatelessWidget {
+  final Object error;
+
+  const _GameUnavailable({required this.error});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('خطا در بارگذاری بازی: $error'));
   }
 }

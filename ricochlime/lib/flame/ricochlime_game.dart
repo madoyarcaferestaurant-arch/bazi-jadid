@@ -81,7 +81,12 @@ class RicochlimeGame extends Forge2DGame
       MonsterAnimation.preloadSprites(game: this),
       Player.preloadSprites(game: this),
       ShopItems.preloadSprites(game: this),
-    ]).then((_) => completer.complete(true));
+    ]).then(
+      (_) => completer.complete(true),
+      onError: (Object error, StackTrace stackTrace) {
+        completer.completeError(error, stackTrace);
+      },
+    );
     return completer;
   }();
 

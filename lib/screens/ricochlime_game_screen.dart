@@ -25,13 +25,18 @@ class _RicochlimeGameScreenState extends State<RicochlimeGameScreen> {
   }
 
   Future<void> _prepareGame() async {
-    await Future.wait([
-      LocaleSettings.setLocale(AppLocale.fa),
-      stows.highScore.waitUntilRead(),
-      stows.stylizedPageTransitions.waitUntilRead(),
-      RicochlimeAudio.load(),
-      RicochlimeGame.instance.preloadSprites.future,
-    ]);
+    try {
+      await Future.wait([
+        LocaleSettings.setLocale(AppLocale.fa),
+        stows.highScore.waitUntilRead(),
+        stows.stylizedPageTransitions.waitUntilRead(),
+        RicochlimeAudio.load(),
+        RicochlimeGame.instance.preloadSprites.future,
+      ]);
+    } catch (error, stackTrace) {
+      debugPrint('Ricochlime initialization failed: $error\n$stackTrace');
+      rethrow;
+    }
   }
 
   @override
@@ -43,7 +48,7 @@ class _RicochlimeGameScreenState extends State<RicochlimeGameScreen> {
           future: _preparation,
           builder: (context, snapshot) {
             if (snapshot.hasError) {
-              return Center(child: Text('خطا در بارگذاری بازی: ${snapshot.error}'));
+              return _GameUnavailable(error: snapshot.error!);
             }
             if (snapshot.connectionState != ConnectionState.done) {
               return const Center(child: CircularProgressIndicator());
@@ -52,6 +57,19 @@ class _RicochlimeGameScreenState extends State<RicochlimeGameScreen> {
           },
         ),
       ),
+    );
+  }
+}
+
+class _GameUnavailable extends StatelessWidget {
+  final Object error;
+
+  const _GameUnavailable({required this.error});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(child: Text('خطا در بارگذاری بازی: $error')),
     );
   }
 }
